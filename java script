@@ -1,0 +1,75 @@
+# java-script<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Automation</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #f2f2f2;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      width: 150px;
+      padding: 15px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .on {
+      background: green;
+      color: white;
+    }
+
+    .off {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🏠 Home Automation</h1>
+
+  <h2>Light</h2>
+  <button class="on" onclick="lightOn()">ON</button>
+  <button class="off" onclick="lightOff()">OFF</button>
+
+  <h2>Fan</h2>
+  <button class="on" onclick="fanOn()">ON</button>
+  <button class="off" onclick="fanOff()">OFF</button>
+
+  <script>
+    function lightOn() {
+      alert("Light ON");
+    }
+
+    function lightOff() {
+      alert("Light OFF");
+    }
+
+    function fanOn() {
+      alert("Fan ON");
+    }
+
+    function fanOff() {
+      alert("Fan OFF");
+    }
+  </script>
+
+</body>
+</html>
+:::
+
+This is HTML + CSS + JavaScript. The buttons currently show alerts; to actually control appliances, we need to connect the JavaScript to your Arduino/ESP32/ESP8266.
+
+
